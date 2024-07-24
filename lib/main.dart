@@ -1,5 +1,5 @@
-import 'package:academix_polnep/master_view.dart';
-import 'package:academix_polnep/views/dashboard/login.dart';
+import 'package:academix_polnep/views/login/login.dart';
+import 'package:academix_polnep/views/navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Navbar(),
+      home: Login(),
     );
   }
 }

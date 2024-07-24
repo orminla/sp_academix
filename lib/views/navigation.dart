@@ -1,4 +1,4 @@
-import 'package:academix_polnep/views/dashboard/login.dart';
+import 'package:academix_polnep/views/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 
@@ -9,18 +9,22 @@ class Navbar extends StatefulWidget {
   State<Navbar> createState() => _NavbarState();
 }
 
+// Jalankan "flutter pub add convex_bottom_bar" sebelum menjalankan aplikasi
+// Tambahin Page Disini
+// halaman kalian link an disini
+// panggil disini - eja
 class _NavbarState extends State<Navbar> {
   int _selectedNavbar = 0;
-  // Tambahin Page Disini
-  // halaman kalian link an disini
-  // panggil disini - eja
   final _pages = [
     // contoh
-    const Login(),
-    const Text("text"),
+    const Login(), // home
+    const Text("text"), // presensi
+    const Text("text"), // kalender
+    const Text("text"), // kelas
+    const Text("text"), // laporan
   ];
 
-  void ChangeSelectedNavBar(int index) {
+  void changeSelectedNavBar(int index) {
     setState(() {
       _selectedNavbar = index;
     });
@@ -62,10 +66,9 @@ class _NavbarState extends State<Navbar> {
             TabItem(icon: Icons.assessment, title: "Laporan"),
           ],
           initialActiveIndex: 0,
-          onTap: ChangeSelectedNavBar,
+          onTap: changeSelectedNavBar,
         ),
       ),
     );
-    ;
   }
 }
