@@ -45,3 +45,17 @@ aplikasi PBL pemrograman mobile
 Dengan **Academix POLNEP**, mahasiswa dapat lebih fokus pada pembelajaran dan prestasi akademik tanpa harus khawatir dengan manajemen waktu dan administrasi. Jadikan pengalaman kuliah Anda lebih terorganisir dan menyenangkan dengan aplikasi ini.
 
 **Unduh sekarang dan rasakan kemudahan dalam genggaman Anda!**
+
+yang pertama kali pull, jalankan: composer require php-open-source-saver/jwt-auth
+
+urutan push coding: cek anda sedang di branch mana: git branch
+
+masuk ke branch anda : git checkout <nama_branch>
+
+push codingan:
+
+git pull origin <nama_branch>
+git status
+git add .
+git commit -m "jelaskan commit"
+git push origin <nama_branch>
