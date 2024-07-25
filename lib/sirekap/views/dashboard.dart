@@ -1,3 +1,4 @@
+import 'package:academix_polnep/sirekap/views/revisi/revisi.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -13,8 +14,31 @@ class Dashboard extends StatelessWidget {
         ),
         backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Text("Ini dashboard ya"),
+      body: ListView(
+        clipBehavior: Clip.hardEdge,
+        children: [
+          Container(
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(20),
+                  color: Colors.red,
+                  child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RevisiPages()));
+                      },
+                      child: const Text(
+                        'Revisi Button',
+                        style: TextStyle(color: Colors.white),
+                      )),
+                )
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

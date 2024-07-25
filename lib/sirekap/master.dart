@@ -11,6 +11,7 @@ class NavbarSiRekap extends StatefulWidget {
 
 class _NavbarSiRekapState extends State<NavbarSiRekap> {
   int selected = 0;
+  
   final page = [
     const Dashboard(),
     const Text("Presensi"),
