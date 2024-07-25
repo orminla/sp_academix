@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PagesFormRevisi extends StatefulWidget {
   const PagesFormRevisi({super.key});
@@ -26,23 +27,113 @@ class _PagesFormRevisiState extends State<PagesFormRevisi> {
             margin: const EdgeInsets.all(20),
             child: Column(
               children: [
+                Nim(),
+                NamaMahasiswa(),
+                Makul(),
+                Keterangan(),
+                const SizedBox(
+                  height: 10,
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: const Column(
                     children: [
                       Text(
-                        "NIM :",
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      TextField(),
+                          'Ukuran file maksimum: 3 mb, Jumlah maksimum file: 1'),
                     ],
                   ),
                 )
               ],
             ),
           )
+        ],
+      ),
+    );
+  }
+
+  Padding Keterangan() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Keterangan :",
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold)),
+          TextFormField(
+            decoration: InputDecoration(
+              hintText: "Masukkan NIM",
+              hintStyle: TextStyle(color: Colors.grey),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Padding Makul() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Mata Kuliah :",
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold)),
+          TextFormField(
+            decoration: InputDecoration(
+              hintText: "Masukkan NIM",
+              hintStyle: TextStyle(color: Colors.grey),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Padding NamaMahasiswa() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Nama Mahasiswa :",
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold)),
+          TextFormField(
+            decoration: InputDecoration(
+              hintText: "Masukkan NIM",
+              hintStyle: TextStyle(color: Colors.grey),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Padding Nim() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("NIM :",
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold)),
+          TextFormField(
+            decoration: InputDecoration(
+              hintText: "Masukkan NIM",
+              hintStyle: TextStyle(color: Colors.grey),
+            ),
+          ),
         ],
       ),
     );
