@@ -1,4 +1,5 @@
 import 'package:academix_polnep/views/login/forgetPassword.dart';
+import 'package:academix_polnep/views/login/pilihan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 
@@ -13,7 +14,7 @@ class _LoginState extends State<Login> {
   final _formkey = GlobalKey<FormState>();
   bool? checkValue = false;
 
-// bakground pake ini
+// background pake ini
   Gradient gradient = const LinearGradient(
       colors: [
         Color(0xFF158AD4),
@@ -26,7 +27,7 @@ class _LoginState extends State<Login> {
         1.0
       ],
       tileMode: TileMode.clamp);
-// bakground pake ini
+// button pake ini
   Gradient btnGradient = const LinearGradient(
       colors: [
         Color(0xFF158AD4),
@@ -54,7 +55,7 @@ class _LoginState extends State<Login> {
                 children: <Widget>[
                   Align(
                       child: Image.asset(
-                    "assets/logo.png",
+                    "assets/images/logo.png",
                     scale: 15,
                   )),
                   const Padding(padding: EdgeInsets.all(20)),
@@ -69,11 +70,11 @@ class _LoginState extends State<Login> {
                   ),
                   const Padding(padding: EdgeInsets.all(30)),
                   SizedBox(
-                    height: 50,
                     width: 300,
                     child: TextFormField(
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
+                        isDense: true,
                         hintText: "NIM/NIP",
                         filled: true,
                         fillColor: Colors.white,
@@ -90,11 +91,11 @@ class _LoginState extends State<Login> {
                   ),
                   const Padding(padding: EdgeInsets.all(15)),
                   SizedBox(
-                      height: 50,
                       width: 300,
                       child: TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
+                          isDense: true,
                           hintText: "PASSWORD",
                           filled: true,
                           fillColor: Colors.white,
@@ -118,7 +119,7 @@ class _LoginState extends State<Login> {
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                  return const Forgetpassword();
+                                  return const ForgetPassword();
                                 }));
                               })),
                   ),
@@ -136,7 +137,11 @@ class _LoginState extends State<Login> {
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                       onPressed: () {
-                        if (_formkey.currentState!.validate()) {}
+                        if (_formkey.currentState!.validate()) {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                            return Pilihan();
+                          }));
+                        }
                       },
                     ),
                   )

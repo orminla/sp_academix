@@ -1,0 +1,8 @@
+pasang paket-paket ini sebelum menjalankan aplikasi
+
+
+todo
+
+ganti font
+
+-> flutter pub add convex_bottom_bar
