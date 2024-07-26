@@ -1,4 +1,4 @@
-import 'package:academix_polnep/views/login/forgetPassword.dart';
+import 'package:academix_polnep/views/login/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ForgetPassword(),
+      home: Login(),
     );
   }
 }

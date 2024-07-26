@@ -1,3 +1,4 @@
+import 'package:academix_polnep/views/helper/styleHelper.dart';
 import 'package:academix_polnep/views/login/forgetPassword.dart';
 import 'package:academix_polnep/views/login/pilihan.dart';
 import 'package:flutter/material.dart';
@@ -14,37 +15,10 @@ class _LoginState extends State<Login> {
   final _formkey = GlobalKey<FormState>();
   bool? checkValue = false;
 
-// background pake ini
-  Gradient gradient = const LinearGradient(
-      colors: [
-        Color(0xFF158AD4),
-        Color(0xFF39EADD)
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(0.0, 1.0),
-      stops: [
-        0.0,
-        1.0
-      ],
-      tileMode: TileMode.clamp);
-// button pake ini
-  Gradient btnGradient = const LinearGradient(
-      colors: [
-        Color(0xFF158AD4),
-        Color(0xFF39EADD)
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(0.0, 1.0),
-      stops: [
-        0.0,
-        1.0
-      ],
-      tileMode: TileMode.clamp);
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: gradient),
+      decoration: BoxDecoration(gradient: bgGradient),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Form(
@@ -128,7 +102,7 @@ class _LoginState extends State<Login> {
                     height: 45,
                     width: 200,
                     decoration: BoxDecoration(gradient: btnGradient, borderRadius: BorderRadius.circular(20), boxShadow: [
-                      BoxShadow(color: Colors.black.withOpacity(0.1), spreadRadius: 3, blurRadius: 2, offset: const Offset(0, 3))
+                      boxShadow
                     ]),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent, shadowColor: Colors.transparent),

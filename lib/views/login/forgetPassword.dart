@@ -1,7 +1,7 @@
+import 'package:academix_polnep/views/helper/styleHelper.dart';
 import 'package:academix_polnep/views/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/widgets.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({super.key});
@@ -15,39 +15,10 @@ class _ForgetPasswordState extends State<ForgetPassword> {
 
   bool? checkValue = false;
 
-  BoxShadow boxShadow = BoxShadow(color: Colors.black.withOpacity(0.1), spreadRadius: 3, blurRadius: 2, offset: const Offset(0, 3));
-
-// background pake ini
-  Gradient gradient = const LinearGradient(
-      colors: [
-        Color(0xFF158AD4),
-        Color(0xFF39EADD)
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(0.0, 1.0),
-      stops: [
-        0.0,
-        1.0
-      ],
-      tileMode: TileMode.clamp);
-// button pake ini
-  Gradient btnGradient = const LinearGradient(
-      colors: [
-        Color(0xFF158AD4),
-        Color(0xFF39EADD)
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(0.0, 1.0),
-      stops: [
-        0.0,
-        1.0
-      ],
-      tileMode: TileMode.clamp);
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: gradient),
+      decoration: BoxDecoration(gradient: bgGradient),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Form(
@@ -171,7 +142,7 @@ Politeknik Negeri Pontianak
                     onPressed: () {
                       if (_formkey.currentState!.validate()) {
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                          return Login();
+                          return const Login();
                         }));
                       }
                     },
