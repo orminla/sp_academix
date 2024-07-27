@@ -46,16 +46,24 @@ Dengan **Academix POLNEP**, mahasiswa dapat lebih fokus pada pembelajaran dan pr
 
 **Unduh sekarang dan rasakan kemudahan dalam genggaman Anda!**
 
-yang pertama kali pull, jalankan: composer require php-open-source-saver/jwt-auth
+yang pertama kali pull, jalankan: 
+```bash
+composer require php-open-source-saver/jwt-auth
+```
 
-urutan push coding: cek anda sedang di branch mana: git branch
-
-masuk ke branch anda : git checkout <nama_branch>
-
+urutan push coding: cek anda sedang di branch mana: 
+```bash
+git branch
+```
+masuk ke branch anda : 
+```bash
+git checkout <nama_branch>
+```
 push codingan:
-
+```bash
 git pull origin <nama_branch>
 git status
 git add .
 git commit -m "jelaskan commit"
 git push origin <nama_branch>
+```
