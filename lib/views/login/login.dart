@@ -3,6 +3,7 @@ import 'package:academix_polnep/views/login/forgetPassword.dart';
 import 'package:academix_polnep/views/login/pilihan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -33,14 +34,14 @@ class _LoginState extends State<Login> {
                     scale: 15,
                   )),
                   const Padding(padding: EdgeInsets.all(20)),
-                  const Text(
+                  Text(
                     "Welcome !",
-                    style: TextStyle(fontSize: 30, color: Colors.white),
+                    style: GoogleFonts.poppins(textStyle: const TextStyle(fontSize: 30, color: Colors.white)),
                   ),
                   const Padding(padding: EdgeInsets.all(5)),
-                  const Text(
+                  Text(
                     "Login To Your Account",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
+                    style: GoogleFonts.poppins(textStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
                   ),
                   const Padding(padding: EdgeInsets.all(30)),
                   SizedBox(
@@ -77,7 +78,7 @@ class _LoginState extends State<Login> {
                           focusedBorder: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white, width: 2.0), borderRadius: BorderRadius.circular(10)),
                         ),
                         validator: (value) {
-                          if (!value!.contains(RegExp(r'(^[A-Za-z]+$)'))) {
+                          if (!value!.contains(RegExp(r'(^[A-Za-z]+[0-9]+$)'))) {
                             return "password harus ada huruf kapital";
                           }
                           return null;
@@ -89,7 +90,7 @@ class _LoginState extends State<Login> {
                     child: RichText(
                         text: TextSpan(
                             text: "Forget Password",
-                            style: const TextStyle(color: Colors.white, fontSize: 15),
+                            style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.white, fontSize: 15)),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -106,14 +107,14 @@ class _LoginState extends State<Login> {
                     ]),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent, shadowColor: Colors.transparent),
-                      child: const Text(
+                      child: Text(
                         "Login",
-                        style: TextStyle(fontSize: 20, color: Colors.white),
+                        style: GoogleFonts.poppins(textStyle: const TextStyle(fontSize: 20, color: Colors.white)),
                       ),
                       onPressed: () {
                         if (_formkey.currentState!.validate()) {
                           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                            return Pilihan();
+                            return const Pilihan();
                           }));
                         }
                       },

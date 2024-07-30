@@ -2,6 +2,7 @@ import 'package:academix_polnep/views/helper/styleHelper.dart';
 import 'package:academix_polnep/views/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({super.key});
@@ -34,7 +35,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   child: RichText(
                       text: TextSpan(
                           text: "<- Kembali",
-                          style: const TextStyle(color: Colors.white, fontSize: 20),
+                          style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.white, fontSize: 20)),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -44,8 +45,9 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 ),
                 const Padding(padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0)),
                 Container(
-                  height: 140,
+                  height: 170,
                   width: 350,
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       boxShadow: [
@@ -55,13 +57,13 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   child: Align(
                     alignment: Alignment.center,
                     child: RichText(
-                        text: const TextSpan(
+                        text: TextSpan(
                       text: '''
 ACADEMIX
 Jurusan Teknik Elektro
 Politeknik Negeri Pontianak
                       ''',
-                      style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
+                      style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold)),
                     )),
                   ),
                 ),
@@ -79,9 +81,9 @@ Politeknik Negeri Pontianak
                   child: Align(
                     alignment: Alignment.center,
                     child: RichText(
-                        text: const TextSpan(
+                        text: TextSpan(
                       text: "To reset your password, please submit your nim and email address. If we can find you in the database, an email will be sent to your email address, with instructions how to get access again",
-                      style: TextStyle(color: Colors.black, fontSize: 15),
+                      style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 15)),
                     )),
                   ),
                 ),
@@ -135,9 +137,9 @@ Politeknik Negeri Pontianak
                   ]),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent, shadowColor: Colors.transparent),
-                    child: const Text(
+                    child: Text(
                       "SUBMIT",
-                      style: TextStyle(fontSize: 20, color: Colors.white),
+                      style: GoogleFonts.poppins(textStyle: const TextStyle(fontSize: 20, color: Colors.white)),
                     ),
                     onPressed: () {
                       if (_formkey.currentState!.validate()) {

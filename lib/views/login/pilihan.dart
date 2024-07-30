@@ -1,6 +1,7 @@
 import 'package:academix_polnep/views/sihadir/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:academix_polnep/views/helper/styleHelper.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Pilihan extends StatefulWidget {
   const Pilihan({super.key});
@@ -22,9 +23,9 @@ class _PilihanState extends State<Pilihan> {
               children: <Widget>[
                 const Padding(padding: EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0)),
                 RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                   text: "MENUJU KE",
-                  style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold)),
                 )),
                 const Padding(padding: EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0)),
                 Container(
@@ -37,9 +38,9 @@ class _PilihanState extends State<Pilihan> {
                       children: <Widget>[
                         const Padding(padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0)),
                         RichText(
-                            text: const TextSpan(
+                            text: TextSpan(
                           text: "SIHADIR",
-                          style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
+                          style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold)),
                         )),
                         const Padding(padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0)),
                         ElevatedButton(
@@ -50,7 +51,7 @@ class _PilihanState extends State<Pilihan> {
                           ),
                           onPressed: () {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                              return Navbar();
+                              return const Navbar();
                             }));
                           },
                         ),
@@ -67,9 +68,9 @@ class _PilihanState extends State<Pilihan> {
                       children: <Widget>[
                         const Padding(padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0)),
                         RichText(
-                            text: const TextSpan(
+                            text: TextSpan(
                           text: "SIREKAP",
-                          style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
+                          style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold)),
                         )),
                         const Padding(padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0)),
                         ElevatedButton(
@@ -80,7 +81,7 @@ class _PilihanState extends State<Pilihan> {
                           ),
                           onPressed: () {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                              return Navbar();
+                              return const Navbar();
                             }));
                           },
                         ),
