@@ -16,7 +16,7 @@ class _NavbarState extends State<Navbar> {
     // contoh
     const Dashboard(), // home
     const Text("Presensi"), // presensi
-    const Text("Kalender"), // kalender
+    const Text("Kalender Akademik"), // kalender
     const Text("Kelas"), // kelas
     const Text("Laporan"), // laporan
   ];

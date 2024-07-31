@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
                           focusedBorder: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white, width: 2.0), borderRadius: BorderRadius.circular(10)),
                         ),
                         validator: (value) {
-                          if (!RegExp(r'^(?=.*[A-Z])(?=.*\d).+$').hasMatch(value!)) {
+                          if (!RegExp(r'^(?=.*[A-Z]).+$').hasMatch(value!)) {
                             return "password harus ada huruf kapital";
                           }
                           return null;
