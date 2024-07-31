@@ -15,10 +15,10 @@ class _NavbarState extends State<Navbar> {
   final _pages = [
     // contoh
     const Dashboard(), // home
-    const Text("text"), // presensi
-    const Text("text"), // kalender
-    const Text("text"), // kelas
-    const Text("text"), // laporan
+    const Text("Presensi"), // presensi
+    const Text("Kalender"), // kalender
+    const Text("Kelas"), // kelas
+    const Text("Laporan"), // laporan
   ];
 
   void changeSelectedNavBar(int index) {

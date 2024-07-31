@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
                           focusedBorder: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white, width: 2.0), borderRadius: BorderRadius.circular(10)),
                         ),
                         validator: (value) {
-                          if (!value!.contains(RegExp(r'(^[A-Za-z]+[0-9]+$)'))) {
+                          if (!RegExp(r'^(?=.*[A-Z])(?=.*\d).+$').hasMatch(value!)) {
                             return "password harus ada huruf kapital";
                           }
                           return null;
@@ -86,10 +86,10 @@ class _LoginState extends State<Login> {
                       )),
                   const Padding(padding: EdgeInsets.all(10)),
                   Align(
-                    alignment: const Alignment(0.7, 0.7),
+                    alignment: const Alignment(0, 0),
                     child: RichText(
                         text: TextSpan(
-                            text: "Forget Password",
+                            text: "Forgot your Password?",
                             style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.white, fontSize: 15)),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
