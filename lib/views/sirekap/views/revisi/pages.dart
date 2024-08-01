@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -41,6 +42,13 @@ class _PagesFormRevisiState extends State<PagesFormRevisi> {
                       Text(
                           'Ukuran file maksimum: 3 mb, Jumlah maksimum file: 1'),
                     ],
+                  ),
+                ),
+                Container(
+                  width: double.infinity,
+                  child: DottedBorder(
+                    
+                    child: Text("File"),
                   ),
                 )
               ],
