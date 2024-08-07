@@ -1,3 +1,4 @@
+import 'package:academix_polnep/views/sihadir/navigation.dart';
 import 'package:academix_polnep/views/sirekap/master.dart';
 import 'package:academix_polnep/views/login/login.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: Navbar(),
     );
   }
 }
