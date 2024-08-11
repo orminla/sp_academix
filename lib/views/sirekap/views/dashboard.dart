@@ -2,8 +2,8 @@
 import 'package:academix_polnep/views/sirekap/views/revisi/dosen.dart';
 import 'package:academix_polnep/views/sirekap/views/revisi/listrev.dart';
 // import 'package:academix_polnep/views/sirekap/views/revisi/dosen1.dart';
-import 'package:academix_polnep/views/sirekap/views/revisi/revisi.dart';
-import 'package:academix_polnep/views/sirekap/views/revisi/updated.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/revisiNav.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/Confirm.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {

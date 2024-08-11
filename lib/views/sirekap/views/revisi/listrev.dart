@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:academix_polnep/views/sirekap/views/revisi/revisi.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/revisiNav.dart';
 
 class PageList extends StatelessWidget {
   const PageList({super.key});

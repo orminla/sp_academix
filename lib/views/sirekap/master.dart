@@ -16,7 +16,7 @@ class _NavbarSiRekapState extends State<NavbarSiRekap> {
   int selected = 0;
 
   final page = [
-    const Dashboard(),
+    const mahasiswa(),
     const Text("Presensi"),
     const Text("Test"),
     const Text("Halo"),

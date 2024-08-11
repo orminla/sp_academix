@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:academix_polnep/views/sirekap/views/revisi/updated.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/Confirm.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
