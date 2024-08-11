@@ -1,6 +1,6 @@
 import 'package:academix_polnep/views/sirekap/views/dashboard/halaman.dart';
 import 'package:academix_polnep/views/sirekap/views/dashboard/cobe.dart';
-import 'package:academix_polnep/views/sirekap/views/dashboard/mahasiswa.dart';
+// import 'package:academix_polnep/views/sirekap/views/dashboard/mahasiswa.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/material/dropdown.dart';

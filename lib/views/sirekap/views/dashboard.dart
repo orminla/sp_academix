@@ -1,5 +1,7 @@
 // import 'package:academix_polnep/views/sirekap/views/revisi/dosen.dart';
-import 'package:academix_polnep/views/sirekap/views/revisi/dosen1.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/dosen.dart';
+import 'package:academix_polnep/views/sirekap/views/revisi/listrev.dart';
+// import 'package:academix_polnep/views/sirekap/views/revisi/dosen1.dart';
 import 'package:academix_polnep/views/sirekap/views/revisi/revisi.dart';
 import 'package:academix_polnep/views/sirekap/views/revisi/updated.dart';
 import 'package:flutter/material.dart';
@@ -31,10 +33,10 @@ class Dashboard extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => RevisiPages()));
+                                builder: (context) => PageList()));
                       },
                       child: const Text(
-                        'Revisi Button',
+                        'List Button',
                         style: TextStyle(color: Colors.white),
                       )),
                 ),
@@ -59,7 +61,7 @@ class Dashboard extends StatelessWidget {
                   child: TextButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Dosen1()));
+                            MaterialPageRoute(builder: (context) => Dosen()));
                       },
                       child: const Text(
                         'Updated Button ',
