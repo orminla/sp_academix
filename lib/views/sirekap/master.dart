@@ -1,5 +1,7 @@
 import 'package:academix_polnep/views/sirekap/views/dashboard.dart';
 import 'package:academix_polnep/views/sirekap/views/dashboard/cobe.dart';
+import 'package:academix_polnep/views/sirekap/views/surat_peringatan/mhs_one_screen.dart';
+import 'package:academix_polnep/views/sirekap/views/surat_peringatan/mhs_two_screen.dart';
 // import 'package:academix_polnep/views/sirekap/views/dashboard/notifikasi.dart';
 // import 'package:academix_polnep/views/sirekap/views/dashboard/nt.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
@@ -16,7 +18,7 @@ class _NavbarSiRekapState extends State<NavbarSiRekap> {
   int selected = 0;
 
   final page = [
-    const mahasiswa(),
+    const MhsTwoScreen(),
     const Text("Presensi"),
     const Text("Test"),
     const Text("Halo"),
