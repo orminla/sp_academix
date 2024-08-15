@@ -40,7 +40,8 @@ class _verifikasiState extends State<verifikasi> {
           content: SizedBox(
             width: 600,
             height: 400,
-            child: SingleChildScrollView( // To make content scrollable if overflow
+            child: SingleChildScrollView(
+              // To make content scrollable if overflow
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -49,6 +50,7 @@ class _verifikasiState extends State<verifikasi> {
                     style: GoogleFonts.poppins(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
+                      
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -77,30 +79,42 @@ class _verifikasiState extends State<verifikasi> {
                   ),
                   const SizedBox(height: 20),
                   Table(
-                    border: TableBorder.all(), // Added border for better visibility
+                    border:
+                        TableBorder.all(), // Added border for better visibility
                     children: [
                       TableRow(
-                        decoration: BoxDecoration(color: Colors.grey[300]), // Header background
+                        decoration: BoxDecoration(
+                            color: Colors.grey[300]), // Header background
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SURAT PERINGATAN', style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold)),
+                            child: Text('SURAT PERINGATAN',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SEMESTER/KELAS', style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold)),
+                            child: Text('SEMESTER/KELAS',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('TANGGAL PENGAJUAN', style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold)),
+                            child: Text('TANGGAL PENGAJUAN',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SURAT PERNYATAAN', style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold)),
+                            child: Text('SURAT PERNYATAAN',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('STATUS PERINGATAN', style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold)),
+                            child: Text('STATUS PERINGATAN',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                           ),
                         ],
                       ),
@@ -108,44 +122,57 @@ class _verifikasiState extends State<verifikasi> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SP1', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('SP1',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('1A', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('1A',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('21/03/2022', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('21/03/2022',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('-', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('-',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('Selesai', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('Selesai',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                         ],
                       ),
                       TableRow(
-                        decoration: BoxDecoration(color: Colors.grey[200]), // Alternate row color
+                        decoration: BoxDecoration(
+                            color: Colors.grey[200]), // Alternate row color
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SP2', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('SP2',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('3A', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('3A',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('10/11/2023', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('10/11/2023',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('surat_pernyataan.pdf', style: GoogleFonts.poppins(fontSize: 16, color: Colors.blue, decoration: TextDecoration.underline)),
+                            child: Text('surat_pernyataan.pdf',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16,
+                                    color: Colors.blue,
+                                    decoration: TextDecoration.underline)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -154,28 +181,32 @@ class _verifikasiState extends State<verifikasi> {
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 color: Colors.green, // Tambahkan warna di sini
-                                ),
-                                ),
-                                )
+                              ),
+                            ),
+                          )
                         ],
                       ),
                       TableRow(
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('SP3', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('SP3',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('4A', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('4A',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('06/07/2024', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('06/07/2024',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('-', style: GoogleFonts.poppins(fontSize: 16)),
+                            child: Text('-',
+                                style: GoogleFonts.poppins(fontSize: 16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -184,10 +215,9 @@ class _verifikasiState extends State<verifikasi> {
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 color: Colors.orange, // Tambahkan warna di sini
-                                ),
-                                ),
-                                )
-
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     ],
@@ -229,7 +259,9 @@ class _verifikasiState extends State<verifikasi> {
             SizedBox(height: 20),
             DropdownRow(onSearch: _handleSearch),
             SizedBox(height: 10),
-            Expanded(child: DataTableWidget(onViewPressed: _showDetailSurat)), // Pass the function
+            Expanded(
+                child: DataTableWidget(
+                    onViewPressed: _showDetailSurat)), // Pass the function
             SizedBox(height: 10),
             BottomVerificationBar(),
           ],
@@ -299,7 +331,8 @@ class _DropdownRowState extends State<DropdownRow> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView( // To prevent overflow in smaller devices
+    return SingleChildScrollView(
+      // To prevent overflow in smaller devices
       scrollDirection: Axis.horizontal,
       child: Row(
         // mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -558,8 +591,8 @@ class BottomVerificationBar extends StatelessWidget {
                 // Implement verification logic
               },
               style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
-              child:
-                  Text('Verifikasi Semua', style: TextStyle(color: Colors.white)),
+              child: Text('Verifikasi Semua',
+                  style: TextStyle(color: Colors.white)),
             ),
             SizedBox(width: 10),
             ElevatedButton(
